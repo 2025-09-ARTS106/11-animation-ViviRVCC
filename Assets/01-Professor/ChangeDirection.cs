@@ -23,11 +23,21 @@ public class ChangeDirection : MonoBehaviour
 
         if (horizontalMove < 0)
         {
-            anim.SetInteger("direction", 3);
+            anim.SetInteger("Direction", 3);
         }
         if (horizontalMove > 0)
         {
-            anim.SetInteger("direction", 1);
+            anim.SetInteger("Direction", 1);
         }
+ 	if (verticalMove < 0)
+        {
+            anim.SetInteger("Direction", 2);
+        }
+	if (verticalMove > 0)
+        {
+            anim.SetInteger("Direction", 0);
+        }
+
+
     }
 }
